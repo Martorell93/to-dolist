@@ -1,0 +1,39 @@
+@import "../../Assets/Sass/main.scss";
+@import "../../Assets/Sass/lib/vars";
+
+.header {
+    background-color: $color_background_heavy;
+    .header_left {
+        margin-left: 27.67px;
+        .star_category {
+            width: 16.73px;
+            height: 15.98px;
+            margin-right: 0.5rem;
+        }
+        .tittle_category {
+            font-size: 18px;
+            line-height: 21.09px;
+            color: $color_black;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+    .header_right {
+        margin-right: 26px;
+        .text {
+            margin-right: 1em;
+            font-size: $font_header;
+            color: $color_text_grey;
+            font-weight: 400;
+            line-height: 16.41px;
+        }
+        .assigned_profile {
+            margin-bottom: 0;
+            .profile {
+                margin-right: 8px;
+            }
+        }:last-child {
+            margin-right: 0;
+        }
+    }
+}

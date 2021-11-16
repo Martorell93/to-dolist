@@ -1,0 +1,52 @@
+$font_family_base: 'Roboto';
+$font_size_base: 14px;
+$font_weight_base: normal;
+$line_height_base: 1.2;
+$body_color: #333;
+$body_bg: #fff;
+
+
+$headings_margin_bottom: 0;
+$paragraph_margin_bottom: 0;
+
+$dt_font_weight: bold;
+
+$link_color: #345c8d;
+$link_decoration: none;
+$link_hover_color: darken($link_color, 10%);
+$link_hover_decoration: none;
+$table_cell_padding: .5em;
+
+$text_muted: lighten($body_color, 15%);
+
+$base: .5rem;
+
+// Variables globales del proyecto
+
+//Colores principales
+$color_white: #ffffff;
+$color_black: #000000;
+$color_background_heavy: #F8F9FE;
+$color_background_light: $color_white;
+$color_blue: #2191FF;
+$color_grey: #ACAFC2;
+$color_red: #FF2121;
+$color_green: #57C238;
+$color_oranje: #FAAB35;
+$color_text_grey: #7A7A7A;
+
+
+
+// Fuentes principales
+$font_text: 14px;
+$font_header: 16px;
+$font_header_title: 18px;
+$font_text_bold: 700;
+$font_text_normal: 400;
+
+//Height
+$height_header: 58px;
+$height_column_header: 69px;
+$height_column_header_little: 46px;
+$height_column_text: 74px;
+$height_content: calc(100vw - $height_header)
