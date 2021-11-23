@@ -1,6 +1,8 @@
 import React from 'react'
 import { user } from '../../../Models/Users'
 import ProfilePicture from './ProfilePicture'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 const HeaderRight = () => {
     return (
@@ -16,9 +18,9 @@ const HeaderRight = () => {
                     null
                 ))
             }
-                <a href='#'><li className="add_assigned">
-                <img src="src/Assets/Img/Icons/plus dotted.png" alt="add assigned" className="add" />
-                </li></a>
+            <li><button className="add button">
+                <FontAwesomeIcon icon={faPlus} className='add_another'/>
+            </button></li>
 
             </ul>
         </div>

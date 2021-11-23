@@ -29,7 +29,10 @@
             color: $color_text_grey;
             margin-right: 1rem;
             &:hover {
-                background-color: $color_background_heavy;
+                padding: 7px;
+                border: none;
+                color: $color_white;
+                background-color:#2191FF;
             }
         }
         a {
@@ -37,15 +40,23 @@
             .filter {
                 margin-right: 1rem;
                 font-weight: 400;
+                border-radius: 5px;
                 color: $color_text_grey;
+                &:hover {
+                    background-color:#2191FF;
+                    color: $color_white;
+                }
             }
             label {
                 margin-bottom: 0;
                 color: $color_text_grey;
+                border-radius: 5px;
                 &:hover {
-                    background-color: $color_background_heavy;
+                    background-color:#2191FF;
+                    color: $color_white;
                     .sort_list:hover {
-                        background-color: $color_background_heavy;
+                        background-color:#2191FF;
+                        color: $color_white;
                     }
                 }
                 .sort_list {

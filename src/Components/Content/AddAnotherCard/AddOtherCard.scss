@@ -1,3 +1,6 @@
+@import "../../../Assets/Sass/main.scss";
+@import "../../../Assets/Sass/lib/vars";
+
 .add_other_card {
     display: flex;
     padding: 1rem;
@@ -8,9 +11,15 @@
         background-color: transparent;
         width: 22.31px !important;
         height: 22.31px;
-        outline: dashed 3px #757C8F;
+        border: dashed 2.2px #757C8F;
         padding: 2px;
         margin-right: 1rem;
+        &:hover {
+            background-color:#2191FF;
+            border: none;
+            color: $color_white;
+            padding: 3px;
+        }
     }
     .add_name {
         margin-bottom: 0;

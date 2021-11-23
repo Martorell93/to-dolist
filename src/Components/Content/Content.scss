@@ -6,6 +6,7 @@
     display: flex;
     .to_do {
         width: 100%;
+        height: fit-content;
         background-color: $color_background_heavy;
         margin-left: 5px;
         .to_do_header {
@@ -71,7 +72,22 @@
             }
         }
         .header_right {
-            
+            .menu_button {
+                display: flex;
+                .menu {
+                    color: $color_grey;
+                    border-radius: 50%;
+                    background-color: #E7EBF7;
+                    width: 21.22px !important;
+                    height: 21.22px;
+                    padding: 4px;
+                    &:hover {
+                        background-color:#2191FF;
+                        color: $color_white;
+                        padding: 4px;
+                    }
+                }
+            }
         }
     }
     .test {

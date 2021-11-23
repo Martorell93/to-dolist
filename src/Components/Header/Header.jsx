@@ -5,7 +5,7 @@ import "./header.scss"
 
 const Header = () => {
     return (
-        <section className="color header container_spaceB">
+        <section className="header container_spaceB">
             <HeaderLeft />
             <HeaderRight />
         </section>

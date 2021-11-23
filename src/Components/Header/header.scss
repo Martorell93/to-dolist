@@ -36,5 +36,25 @@
         }:last-child {
             margin-right: 0;
         }
+        .add {
+            display: flex;
+            .add_another {
+                color: #757C8F;
+                border-radius: 50%;
+                background-color: transparent;
+                width: 22.31px !important;
+                height: 22.31px;
+                border: dashed 2.2px #757C8F;
+                padding: 2px;
+                margin-right: 1rem;
+                &:hover {
+                    background-color:#2191FF;
+                    border: none;
+                    color: $color_white;
+                    padding: 3px;
+                }
+            }
+        }
+        
     }
 }

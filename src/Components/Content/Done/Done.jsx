@@ -1,5 +1,7 @@
 import React from 'react'
 import AddOtherCard from '../AddAnotherCard/AddOtherCard'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 
 const Done = () => {
     return (
@@ -10,8 +12,8 @@ const Done = () => {
                     <progress className="bar_done" max="100" value="75" />
                 </div>
                 <div className="header_right">
-                    <button className="remove button">
-                        <img src="src\Assets\Img\Icons\menu.png" alt="menu" className="remove_icon" />
+                    <button className="menu_button button">
+                        <FontAwesomeIcon icon={faEllipsisH} className="icon menu" />
                     </button>
                 </div>
             </header>

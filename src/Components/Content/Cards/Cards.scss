@@ -1,9 +1,75 @@
 @import "../../../Assets/Sass/main.scss";
 @import "../../../Assets/Sass/lib/vars";
 
-.cards {
+.card {
     background-color: $color_white;
     margin: 1rem;
     margin-top: 0;
     padding: 1rem;
+    .text {
+        color: $color_grey;
+        font-size: 14px;
+        line-height: 16.41px;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        color: $color_grey;
+        border-radius: 50%;
+        padding: 4px;
+    }
+    .header_cards {
+        padding-bottom: 1rem;
+        .remove {
+            border: dashed 2px $color_grey;
+            border-radius: 50%;
+            padding: 2px;
+            width: 22px;
+            height: 22px;
+            &:hover {
+                background-color:#2191FF;
+                border: none;
+                color: $color_white;
+                padding: 3px;
+            }
+        }
+    }
+    .name {
+        color: $color_black;
+        margin: 0;
+    }
+    .categories {
+        height: 4px;
+        margin: 1rem 0;
+        .label {
+            width: 24px;
+            height: 4px;
+            fill: red;
+            border-radius: 0.5rem;
+        }
+    }
+    .img_attached {
+        width: 100%;
+        height: 100px;
+        border-radius: 8px;
+    }
+    .card_info {
+        margin-top: 1rem;
+        .action:hover {
+            background-color:#2191FF;
+            border: none;
+            color: $color_white;
+            padding: 4px;
+        }
+        .profile {
+            margin-left: 0.5rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
 }
