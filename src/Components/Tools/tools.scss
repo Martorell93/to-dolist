@@ -1,0 +1,62 @@
+@import "../../Assets/Sass/main.scss";
+@import "../../Assets/Sass/lib/vars";
+
+.tools {
+    padding: 1rem 22px;
+    .tools_left {
+        display: flex;
+        align-items: center;
+        .search_icon {
+            width: 20px;
+            height: 20px;
+        }
+        .search_text {
+            font-size: $font_header;
+            line-height: 1.18em;
+            border: none;
+            color: $color_text_grey;
+            margin-left: 9.67px;
+        }
+    }
+    .tools_right {
+        display: flex;
+        align-items: center;
+        .button {
+            padding: 4px;
+            border: 3px dashed #757C8F;
+            border-radius: 5px;
+            font-size: $font_text;
+            color: $color_text_grey;
+            margin-right: 1rem;
+            &:hover {
+                background-color: $color_background_heavy;
+            }
+        }
+        a {
+            font-size: $font_text;
+            .filter {
+                margin-right: 1rem;
+                font-weight: 400;
+                color: $color_text_grey;
+            }
+            label {
+                margin-bottom: 0;
+                color: $color_text_grey;
+                &:hover {
+                    background-color: $color_background_heavy;
+                    .sort_list:hover {
+                        background-color: $color_background_heavy;
+                    }
+                }
+                .sort_list {
+                    margin-left: 0.5rem;
+                    border: none;
+                    color: #ACAFC2;
+                    
+                }
+            }
+
+        }
+        
+    }
+}

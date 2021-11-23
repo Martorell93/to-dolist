@@ -1,0 +1,22 @@
+.add_other_card {
+    display: flex;
+    padding: 1rem;
+    background-color: #E7EAF9;
+    .add_another {
+        color: #757C8F;
+        border-radius: 50%;
+        background-color: transparent;
+        width: 22.31px !important;
+        height: 22.31px;
+        outline: dashed 3px #757C8F;
+        padding: 2px;
+        margin-right: 1rem;
+    }
+    .add_name {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        color: #757C8F;
+    }
+}

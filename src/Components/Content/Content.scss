@@ -1,0 +1,80 @@
+@import "../../Assets/Sass/main.scss";
+@import "../../Assets/Sass/lib/vars";
+
+.content {
+    width: 100%;
+    display: flex;
+    .to_do {
+        width: 100%;
+        background-color: $color_background_heavy;
+        margin-left: 5px;
+        .to_do_header {
+            padding: 1rem;
+        }
+        .header_left {
+            margin-right:  137.71px;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: $font_header;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                line-height: 18.75px;
+            }
+            .bar_to_do {
+                height: 4px;
+                border: none;
+                &::-webkit-progress-bar {
+                    background-color: #ACAFC2;
+                    border-radius: 8px;
+                }
+                &::-webkit-progress-value {
+                    background-color: $color_blue;
+                    border-radius: 8px;
+                }
+            }
+            .bar_doing {
+                height: 4px;
+                border: none;
+                &::-webkit-progress-bar {
+                    background-color: #ACAFC2;
+                    border-radius: 8px;
+                }
+                &::-webkit-progress-value {
+                    background-color: $color_oranje;
+                    border-radius: 8px;
+                }
+            }
+            .bar_done {
+                height: 4px;
+                border: none;
+                &::-webkit-progress-bar {
+                    background-color: #ACAFC2;
+                    border-radius: 8px;
+                }
+                &::-webkit-progress-value {
+                    background-color: $color_green;
+                    border-radius: 8px;
+                }
+            }
+            .bar_test {
+                height: 4px;
+                border: none;
+                &::-webkit-progress-bar {
+                    background-color: #ACAFC2;
+                    border-radius: 8px;
+                }
+                &::-webkit-progress-value {
+                    background-color: $color_red;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .header_right {
+            
+        }
+    }
+    .test {
+        margin-right: 5px;
+    }
+}

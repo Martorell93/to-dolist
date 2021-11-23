@@ -16,7 +16,7 @@ const HeaderRight = () => {
                     null
                 ))
             }
-                <a><li className="add_assigned">
+                <a href='#'><li className="add_assigned">
                 <img src="src/Assets/Img/Icons/plus dotted.png" alt="add assigned" className="add" />
                 </li></a>
 
