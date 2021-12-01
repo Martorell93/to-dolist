@@ -1,27 +1,50 @@
 export const user = [
     {
-        name: "Janine",
-        surname: ["Kennedy", "Peter"],
-        picture: "src/Assets/Img/Profiles/profile 1.png"
+        id: 0,
+        name: "Logan Barry",        
+        pic: "src/Assets/Img/Profiles/profile 1.png",
+        is_master: true
     },
     {
-        name: "Louise",
-        surname: ["Torrel", "Melol"],
-        picture: "src/Assets/Img/Profiles/profile 2.png"
+        id: 1,
+        name: "Johanna Doe",        
+        pic: "src/Assets/Img/Profiles/profile 2.png",
+        is_master: true
+    },    
+    {
+        id: 2,
+        name: "Danny Wise",        
+        pic: "src/Assets/Img/Profiles/profile 3.png",
+        is_master: true
     },
     {
-        name: "Mery",
-        surname: ["Houston", "Clev"],
-        picture: "src/Assets/Img/Profiles/profile 3.png"
+        id: 3,
+        name: "Madison Kirk",        
+        pic: "src/Assets/Img/Profiles/profile 4.png",
+        is_master: false
     },
     {
-        name: "Dakota",
-        surname: ["Irbeen", "Totel"],
-        picture: "src/Assets/Img/Profiles/profile 4.png"
+        id: 4,
+        name: "Lucas Wren",        
+        pic: "src/Assets/Img/Profiles/profile 5.png",
+        is_master: false       
+    },  
+    {
+        id: 5,
+        name: "Cora Clayton",
+        pic: "src/Assets/Img/Profiles/profile 6.png",
+        is_master: false
+    },  
+    {
+        id: 6,
+        name: "Myra Palmer",
+        pic: "src/Assets/Img/Profiles/profile 7.png",
+        is_master: false
     },
     {
-        name: "Kevin",
-        surname: ["Jackson", "Luengo"],
-        picture: "src/Assets/Img/Profiles/profile 5.png"
-    }
+        id: 7,
+        name: "Brent Goodman",
+        pic: "src/Assets/Img/Profiles/profile 8.png",
+        is_master: false
+    },
 ]

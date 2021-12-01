@@ -1,18 +1,20 @@
 import React from 'react'
-import Doing from './Doing/Doing'
-import Done from './Done/Done'
-import Test from './Test/Test'
-import ToDo from './ToDo/ToDo'
+import { sections } from './../../Models/sections'
+import Section from './Section.jsx'
+import CardsContextProvider from '../../Context/CardsContext.jsx'
 import './Content.scss'
 
 const Content = () => {
     return (
-        <div className="content">
-            <ToDo />
-            <Doing />
-            <Done />
-            <Test />
-        </div>
+        <CardsContextProvider >
+            <div className="content">
+                {
+                sections.map((sections_, i) => (
+                    <Section key={i} sections={sections_}/>
+                ))
+                }
+            </div>
+        </CardsContextProvider>
     )
 }
 

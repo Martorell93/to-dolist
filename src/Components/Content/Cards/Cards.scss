@@ -47,8 +47,22 @@
         .label {
             width: 24px;
             height: 4px;
-            fill: red;
             border-radius: 0.5rem;
+        }
+        .grey {
+            fill: $color_grey;
+        }
+        .red {
+            fill: $color_red;
+        }
+        .orange {
+            fill: $color_orange;
+        }
+        .green {
+            fill: $color_green;
+        }
+        .blue {
+            fill: $color_blue;
         }
     }
     .img_attached {
@@ -58,16 +72,23 @@
     }
     .card_info {
         margin-top: 1rem;
-        .action:hover {
-            background-color:#2191FF;
-            border: none;
-            color: $color_white;
-            padding: 4px;
+        .attach_comments {
+            .child {
+                display: flex;
+            }
+            .action:hover {
+                background-color:#2191FF;
+                border: none;
+                color: $color_white;
+                padding: 4px;
+            }
         }
-        .profile {
-            margin-left: 0.5rem;
-            &:first-child {
-                margin-left: 0;
+        .people {
+            .profile {
+                margin-left: 0.5rem;
+                &:first-child {
+                    margin-left: 0;
+                }
             }
         }
     }

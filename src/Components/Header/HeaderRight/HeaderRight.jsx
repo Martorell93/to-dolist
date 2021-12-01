@@ -1,19 +1,22 @@
-import React from 'react'
-import { user } from '../../../Models/Users'
+import React, { useContext } from 'react'
 import ProfilePicture from './ProfilePicture'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { UserContext } from '../../../Context/UserContext'
 
 const HeaderRight = () => {
+
+    const { usuarios } = useContext(UserContext)
+
     return (
         <div className="header_right container_center">
             <h3 className="text">Assigned By: </h3>
             <ul className="assigned_profile container_center">
             {
-                user.map((users_, i) => (
-                    i <= 2 
+                usuarios.map((users_, i) => (
+                    users_.is_master 
                     ?
-                    <ProfilePicture key={i} name={users_.name} picture={users_.picture}/>
+                    <ProfilePicture key={i} name={users_.name} picture={users_.pic}/>
                     :
                     null
                 ))

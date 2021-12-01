@@ -4,12 +4,12 @@
 .content {
     width: 100%;
     display: flex;
-    .to_do {
+    .section {
         width: 100%;
         height: fit-content;
         background-color: $color_background_heavy;
         margin-left: 5px;
-        .to_do_header {
+        .section_header {
             padding: 1rem;
         }
         .header_left {
@@ -42,7 +42,7 @@
                     border-radius: 8px;
                 }
                 &::-webkit-progress-value {
-                    background-color: $color_oranje;
+                    background-color: $color_orange;
                     border-radius: 8px;
                 }
             }
@@ -90,7 +90,7 @@
             }
         }
     }
-    .test {
+    &:last-child {
         margin-right: 5px;
     }
 }
