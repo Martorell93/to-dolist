@@ -5,7 +5,9 @@ import "./Assets/Sass/main.scss"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="todo">
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 )

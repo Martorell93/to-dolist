@@ -22,15 +22,12 @@ const Cards = (props) => {
             <div className="category">
                 <h3 className="text name">{props.tareas.title}</h3>
                 <svg className="display_center categories">
-                    {/* <rect className='label' rx="2"/>
-                    <rect className='label' x="32" rx="2"/>
-                    <rect className='label' x="64" rx="2"/> */}
                     {
-                        props.tareas.categories.map((categories_id, i) => (
+                        props.tareas.categories.map((categories_id, j) => (
                             props.categorias.map((categoria, i) => (
                                 categories_id == categoria.id
                                 ?
-                                <rect key={i} className={`${categoria.color} label`} x={separacion*i} rx="2"/>
+                                <rect key={i} className={`${categoria.color} label`} x={separacion*j} rx="2"/>
                                 :
                                 null
                             ))
