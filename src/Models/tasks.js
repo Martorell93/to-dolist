@@ -9,7 +9,7 @@ export const tasks = [
         attached: [0, 1],
         comments: [0],
         pic: "",
-        section: 1,
+        section: 0,
     },
     {
         id: 1,
@@ -21,7 +21,7 @@ export const tasks = [
         attached: [2, 3, 4],
         comments: [1, 2],
         pic: "src/Assets/Img/Cards/books.png",
-        section: 1,
+        section: 0,
     },
     {
         id: 2,
@@ -45,7 +45,7 @@ export const tasks = [
         attached: [1],
         comments: [3],
         pic: "",  
-        section: 2,
+        section: 1,
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ export const tasks = [
         attached: [2],
         comments: [],
         pic: "src/Assets/Img/Cards/ux.jpg",
-        section: 3,
+        section: 1,
     },
     {
         id: 5,
@@ -69,7 +69,7 @@ export const tasks = [
         attached: [2],
         comments: [],
         pic: "src/Assets/Img/Cards/TeC5pm55CkE.png",   
-        section: 1,
+        section: 2,
     },
     {
         id: 6,
@@ -81,7 +81,7 @@ export const tasks = [
         attached: [],
         comments: [],
         pic: "",   
-        section: 0,
+        section: 2,
     },
     {
         id: 7,
@@ -93,6 +93,6 @@ export const tasks = [
         attached: [1],
         comments: [],
         pic: "src/Assets/Img/Cards/cardsorting.png",  
-        section: 0,
+        section: 3,
     },    
 ]

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 import { CardsContext } from '../../Context/CardsContext'
 import { UserContext } from '../../Context/UserContext'
+import { Draggable } from 'react-beautiful-dnd'
 
 const Section = (props) => {
 
@@ -12,7 +13,7 @@ const Section = (props) => {
     const { usuarios } = useContext(UserContext)
 
     return (
-        <section className='section'>
+        <section className='section' ref={props.provided.innerRef} {...props.provided.droppableProps}>
             <header className="section_header container_spaceB">
                 <div className="header_left">
                     <h2 className="title">{props.sections.title}</h2>
@@ -29,14 +30,19 @@ const Section = (props) => {
                     tareas.map((tareas_, i) => (
                         tareas_.section == props.sections.id
                         ?
-                        <Cards key={i}  tareas={tareas_} 
-                        categorias={categorias} comentarios={comentarios}
-                        usuarios={usuarios}/>
+                        <Draggable key={tareas_.id} draggableId={`${tareas_.id}`} index={i}>
+                            {(provided) => (
+                                <Cards key={i}  tareas={tareas_}
+                                categorias={categorias} comentarios={comentarios}
+                                usuarios={usuarios} provided={provided}/>
+                            )}
+                        </Draggable>
                         :
                         null
                     ))
                 }
             </article>
+            {props.provided.placeholder}
             <AddOtherCard />
         </section>
     )

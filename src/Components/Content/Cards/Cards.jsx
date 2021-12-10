@@ -4,12 +4,13 @@ import { faPaperclip } from '@fortawesome/free-solid-svg-icons'
 import { faComment, faTrashAlt, faClock } from '@fortawesome/free-regular-svg-icons'
 import './Cards.scss'
 
+
 const Cards = (props) => {
     
     const separacion = 32;
 
     return (
-        <section className='card'>
+        <section className='card' ref={props.provided.innerRef}{...props.provided.draggableProps}{...props.provided.dragHandleProps} style={props.provided.draggableProps.style}>
             <header className="header_cards container_spaceB">
                 <div className="left container_center">
                     <FontAwesomeIcon icon={faClock} className='icon clock'/>
